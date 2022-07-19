@@ -7,6 +7,25 @@ const toogleMenu = document.getElementById('toogle-menu');
 const closeMenu = document.getElementById('close-menu');
 const slideClass = document.getElementsByClassName('slide');
 
+if (window.matchMedia("(min-width: 768px)").matches) {
+    logo.addEventListener('click', (event) => {
+        const navLinkActive = document.querySelector("nav ul li a.active");
+        navLinkActive.classList.remove('active');
+    });
+
+    navMenu.addEventListener('click', (event) => {
+        if (event.target.classList.contains('nav-link')) {
+            const navLinkActive = document.querySelector("nav ul li a.active");
+
+            if (navLinkActive !== null && event.target.getAttribute('href') !== navLinkActive.getAttribute('href')) {
+                navLinkActive.classList.remove('active');
+            };
+
+            event.target.classList.add('active');
+        };
+    });
+};
+
 toogleMenu.addEventListener('click', () => {
     navMenu.classList.toggle('slide');
     if (slideClass.length) {

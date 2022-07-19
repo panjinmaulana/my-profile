@@ -51,6 +51,16 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li a.active {
+    background-color: #00a2c6;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #00a2c6;
+    border-radius: 5px;
+}
+
 nav ul li a:visited {
     color: black;
 }
@@ -82,6 +92,10 @@ nav ul li a:visited {
     color: white;
 }
 
+.fa-paper-plane {
+    margin-left: 3px;
+}
+
 .jumbotron button:hover {
     opacity: 0.9;
     transition: all 0.3s ease-in-out;
@@ -99,7 +113,10 @@ nav ul li a:visited {
     min-width: 50%;
 }
 
-#about-me, #skills, #portfolio, #contact {
+#about-me,
+#skills,
+#portfolio,
+#contact {
     padding: 7rem 0 5rem;
 }
 
@@ -227,8 +244,20 @@ footer {
     padding: 20px;
     color: white;
     background-color: #00a2c6;
-    text-align: center;
     font-weight: bold;
+    text-align: center;
+}
+
+footer span {
+    font-family: 'Pacifico', cursive;
+}
+
+.fa-envelope,
+.fa-linkedin,
+.fa-github {
+    color: white;
+    margin: 20px 10px 0 0;
+
 }
 
 /* Media Query */
@@ -337,7 +366,11 @@ footer {
         display: block;
     }
 
-    #home, #about-me, #skills, #portfolio, #contact  {
+    #home,
+    #about-me,
+    #skills,
+    #portfolio,
+    #contact {
         padding: 5rem 0 1rem;
     }
 

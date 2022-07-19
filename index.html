@@ -13,28 +13,30 @@
     <header>
         <nav>
             <div class='logo'>
-                <h3><a href='#home'>Panji Maulana</a></h3>
+                <h3><a href='#' class="nav-link">Panji Maulana</a></h3>
             </div>
 
             <ul>
-                <li><a href='#home'>Home</a></li>
-                <li><a href='#about-me'>About Me</a></li>
-                <li><a href='#skills'>Skills</a></li>
-                <li><a href='#portfolio'>Portfolio</a></li>
-                <li><a href='#contact'>Contact</a></li>
+                <li><a href='#home' class="nav-link active">Home</a></li>
+                <li><a href='#about-me' class="nav-link">About Me</a></li>
+                <li><a href='#skills' class="nav-link">Skills</a></li>
+                <li><a href='#portfolio' class="nav-link">Portfolio</a></li>
+                <li><a href='#contact' class="nav-link">Contact</a></li>
             </ul>
 
             <i id="toogle-menu" class="fa-solid fa-bars"></i>
             <i id="close-menu" class="fa-solid fa-xmark"></i>
         </nav>
+    </header>
 
-        <div class="container">
-            <section id='home'>
+    <main>
+        <article id='home'>
+            <div class="container">
                 <div class="jumbotron">
                     <article class="desc-bio">
                         <h2>Hello, I am <span id="slogan"></span></h2>
                         <h4>as Frontend Developer</h4>
-                        <button>Contact Me</button>
+                        <button>Contact Me <i class="fa-solid fa-paper-plane"></i></button>
                     </article>
                     <article class="img-bio">
                         <figure>
@@ -42,21 +44,21 @@
                         </figure>
                     </article>
                 </div>
-            </section>
-        </div>
-    </header>
+            </div>
+        </article>
 
-    <main>
-        <div class="container">
-            <article id='about-me'>
+        <article id='about-me'>
+            <div class="container">
                 <h2 class="heading-two">About Me</h2>
                 <p>S1 Informatics graduate who has experience as a Full Stack Developer. Skilled in mastering
                     frontend and backend technologies such as JavaScript frameworks/libraries such as React and Vue,
                     Node.js, SQL and non-SQL databases, as well as in building SEO-friendly, attractive, interactive
                     and responsive web & mobile UI/UX designs.</p>
-            </article>
+            </div>
+        </article>
 
-            <article id='skills'>
+        <article id='skills'>
+            <div class="container">
                 <h2 class="heading-two">Skills</h2>
                 <p>Technology stack skills and experience.</p>
                 <div class="skills-icon">
@@ -72,9 +74,11 @@
                     <i class="fa-brands fa-github fa-2xl"></i>
                     <i class="fa-brands fa-bitbucket fa-2xl"></i>
                 </div>
-            </article>
+            </div>
+        </article>
 
-            <article id='portfolio'>
+        <article id='portfolio'>
+            <div class="container">
                 <h2 class="heading-two">Portfolio</h2>
                 <p>Portfolio that has been built.</p>
                 <div class="portfolio-card">
@@ -110,9 +114,11 @@
                                 more</a></button>
                     </div>
                 </div>
-            </article>
+            </div>
+        </article>
 
-            <article id='contact'>
+        <article id='contact'>
+            <div class="container">
                 <h2 class="heading-two">Contact</h2>
                 <p>If you have any questions about me. Please contact me.</p>
                 <form action="" method="post">
@@ -129,12 +135,29 @@
                         <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
                     </fieldset>
                 </form>
-            </article>
-        </div>
+            </div>
+        </article>
     </main>
 
     <footer>
-        <p>Made by Panji Maulana</p>
+        <section id="copyright">
+            <p id="years">Copyright ©
+                <script>
+                    document
+                        .getElementById('years')
+                        .appendChild(document.createTextNode(new Date().getFullYear()));
+                </script>
+                Created by <span>Panji Maulana</span>
+            </p>
+        </section>
+
+        <section id="social-media">
+            <div class="icon-social-media">
+                <a href="mailto: panjinmaulana@gmail.com"><i class="fa-solid fa-envelope fa-xl"></i></a>
+                <a href='https://linkedin.com/in/panji-maulana/'><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                <a href='https://github.com/panjinmaulana'><i class="fa-brands fa-github fa-xl"></i></a>
+            </div>
+        </section>
     </footer>
 
     <script src="index.js"></script>
