@@ -51,12 +51,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a.active {
-    background-color: #00a2c6;
-    border-radius: 5px;
-}
-
-nav ul li a:hover {
+nav ul li a:hover, nav ul li a.active {
     background-color: #00a2c6;
     border-radius: 5px;
 }
@@ -68,6 +63,7 @@ nav ul li a:visited {
 #toogle-menu,
 #close-menu {
     display: none;
+    cursor: pointer;
 }
 
 .jumbotron {
@@ -123,10 +119,29 @@ button.download-cv:hover,
     padding: 7rem 0 5rem;
 }
 
-#about-me p {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
+#about-me .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#desc-about-me,
+#social-media {
+    width: 45%;
+}
+
+#social-media .fa-envelope,
+#social-media .fa-linkedin,
+#social-media .fa-github {
+    color: black;
+    margin: 20px 10px 0 0;
+}
+
+#social-media .fa-envelope:hover,
+#social-media .fa-linkedin:hover,
+#social-media .fa-github:hover,
+.skills-icon i:hover {
+    color: #00a2c6;
+    transition: all 0.3s ease-in-out;
 }
 
 #skills p {
@@ -138,11 +153,6 @@ button.download-cv:hover,
 .skills-icon {
     padding: 24px 0;
     text-align: center;
-}
-
-.skills-icon i:hover {
-    color: #00a2c6;
-    transition: all 0.3s ease-in-out;
 }
 
 #portfolio p {
@@ -158,11 +168,13 @@ button.download-cv:hover,
 }
 
 .card {
+    border: 1px solid rgb(0 0 0 / 0.1);
+    padding: 5px;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     transition: all 0.3s ease-in-out;
     width: 30%;
     min-height: 400px;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
 }
 
 .card:hover {
@@ -248,13 +260,6 @@ footer span {
     font-family: 'Pacifico', cursive;
 }
 
-#social-media .fa-envelope,
-#social-media .fa-linkedin,
-#social-media .fa-github {
-    color: white;
-    margin: 20px 10px 0 0;
-}
-
 /* Media Query */
 @media screen and (max-width: 1280px) {
     nav ul {
@@ -275,23 +280,9 @@ footer span {
         min-width: 70%;
     }
 
-    #home .jumbotron .img-bio img {
-        width: 100%;
-    }
-
-    #about-me {
-        width: 100%;
-    }
-
-    #about-me p {
-        width: 100%;
-        text-align: justify;
-    }
-
-    #skills {
-        width: 100%;
-    }
-
+    #home .jumbotron .img-bio img,
+    #about-me,
+    #skills,
     #contact {
         width: 100%;
     }
@@ -315,10 +306,6 @@ footer span {
 
     #portfolio .portfolio-card .card {
         width: 100%;
-    }
-
-    #portfolio .portfolio-card .card figcaption {
-        text-align: justify;
     }
 }
 
@@ -385,5 +372,23 @@ footer span {
 
     #home .jumbotron .img-bio img {
         width: 40%;
+    }
+
+    #about-me .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #desc-about-me,
+    #social-media {
+        width: 100%;
+    }
+
+    #social-media {
+        margin-top: 20px;
+    }
+
+    #social-media .icon-social-media {
+        text-align: center;
     }
 }

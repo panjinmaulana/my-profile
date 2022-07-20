@@ -7,15 +7,17 @@ const toogleMenu = document.getElementById('toogle-menu');
 const closeMenu = document.getElementById('close-menu');
 const slideClass = document.getElementsByClassName('slide');
 
-if (window.matchMedia("(min-width: 768px)").matches) {
-    const navLinkActive = document.querySelector("nav ul li a.active");
+if (window.matchMedia('(min-width: 768px)').matches) {
 
     logo.addEventListener('click', () => {
+        const navLinkActive = document.querySelector('nav ul li a.active');
         navLinkActive.classList.remove('active');
     });
 
     navMenu.addEventListener('click', (event) => {
         if (event.target.classList.contains('nav-link')) {
+            const navLinkActive = document.querySelector('nav ul li a.active');
+
             if (navLinkActive !== null && event.target.getAttribute('href') !== navLinkActive.getAttribute('href')) {
                 navLinkActive.classList.remove('active');
             };
@@ -47,7 +49,7 @@ closeMenu.addEventListener('click', () => {
     };
 });
 
-if (window.matchMedia("(max-width: 640px)").matches) {
+if (window.matchMedia('(max-width: 640px)').matches) {
     window.addEventListener('click', (event) => {
         if (event.target.getAttribute('href') == '#home' ||
             event.target.getAttribute('href') == '#about-me' ||
@@ -64,7 +66,7 @@ if (window.matchMedia("(max-width: 640px)").matches) {
 };
 
 //Typewriter effect
-const line = document.getElementById("typewriter-name");
+const line = document.getElementById('typewriter-name');
 const texts = ['Panji Maulana'];
 const speed = 50;
 
