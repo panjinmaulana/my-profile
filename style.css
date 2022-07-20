@@ -129,7 +129,8 @@ button.download-cv:hover,
 
 #social-media .fa-envelope,
 #social-media .fa-linkedin,
-#social-media .fa-github {
+#social-media .fa-github,
+#social-media .fa-instagram {
     color: black;
     margin: 20px 10px 0 0;
 }
