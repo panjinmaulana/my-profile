@@ -13,34 +13,40 @@
     <header>
         <nav>
             <div class='logo'>
-                <h3><a href='#' class="nav-link">Panji Maulana</a></h3>
+                <h3><a href='#'>Panji Maulana</a></h3>
             </div>
 
             <ul>
-                <li><a href='#home' class="nav-link active">Home</a></li>
-                <li><a href='#about-me' class="nav-link">About Me</a></li>
-                <li><a href='#skills' class="nav-link">Skills</a></li>
-                <li><a href='#portfolio' class="nav-link">Portfolio</a></li>
-                <li><a href='#contact' class="nav-link">Contact</a></li>
+                <li><a href='#home' class='nav-link active'>Home</a></li>
+                <li><a href='#about-me' class='nav-link'>About Me</a></li>
+                <li><a href='#skills' class='nav-link'>Skills</a></li>
+                <li><a href='#portfolio' class='nav-link'>Portfolio</a></li>
+                <li><a href='#contact' class='nav-link'>Contact</a></li>
             </ul>
 
-            <i id="toogle-menu" class="fa-solid fa-bars"></i>
-            <i id="close-menu" class="fa-solid fa-xmark"></i>
+            <i id='toogle-menu' class='fa-solid fa-bars'></i>
+            <i id='close-menu' class='fa-solid fa-xmark'></i>
         </nav>
     </header>
 
     <main>
         <article id='home'>
-            <div class="container">
-                <div class="jumbotron">
-                    <article class="desc-bio">
-                        <h2>Hello, I am <span id="slogan"></span></h2>
+            <div class='container'>
+                <div class='jumbotron'>
+                    <article class='desc-bio'>
+                        <h2>Hello, I am <span id='typewriter-name'></span></h2>
                         <h4>as Frontend Developer</h4>
-                        <button>Contact Me <i class="fa-solid fa-paper-plane"></i></button>
+                        <button type='button' class='download-cv'>
+                            <a
+                                href='https://drive.google.com/u/0/uc?id=1C4migQn-6O53J6iH0qHFFe6Pue9tTHK2&export=download'>
+                                Download
+                                CV <i class='fa-solid fa-download'></i>
+                            </a>
+                        </button>
                     </article>
-                    <article class="img-bio">
+                    <article class='img-bio'>
                         <figure>
-                            <img src='assets/image/panji-maulana.jpg' alt="panji maulana" width="50%">
+                            <img src='assets/image/panji-maulana.jpg' alt='panji maulana' width='50%'>
                         </figure>
                     </article>
                 </div>
@@ -48,69 +54,68 @@
         </article>
 
         <article id='about-me'>
-            <div class="container">
-                <h2 class="heading-two">About Me</h2>
-                <p>S1 Informatics graduate who has experience as a Full Stack Developer. Skilled in mastering
-                    frontend and backend technologies such as JavaScript frameworks/libraries such as React and Vue,
-                    Node.js, SQL and non-SQL databases, as well as in building SEO-friendly, attractive, interactive
-                    and responsive web & mobile UI/UX designs.</p>
+            <div class='container'>
+                <h2 class='heading-two'>About Me</h2>
+                <p>Experienced Frontend Developer who is comfortable working with HTML, CSS, JavaScript and
+                    frameworks/libraries such as React, Next, and Vue in building SEO friendly, attractive, responsive
+                    and interactive Web & Mobile UI/UX design to provide a great customer experience.</p>
             </div>
         </article>
 
         <article id='skills'>
-            <div class="container">
-                <h2 class="heading-two">Skills</h2>
+            <div class='container'>
+                <h2 class='heading-two'>Skills</h2>
                 <p>Technology stack skills and experience.</p>
-                <div class="skills-icon">
-                    <i class="fa-brands fa-html5 fa-2xl"></i>
-                    <i class="fa-brands fa-css3-alt fa-2xl"></i>
-                    <i class="fa-brands fa-js fa-2xl"></i>
-                    <i class="fa-brands fa-react fa-2xl"></i>
-                    <i class="fa-brands fa-vuejs fa-2xl"></i>
-                    <i class="fa-brands fa-node-js fa-2xl"></i>
-                    <i class="fa-brands fa-bootstrap fa-2xl"></i>
-                    <i class="fa-brands fa-sass fa-2xl"></i>
-                    <i class="fa-brands fa-git fa-2xl"></i>
-                    <i class="fa-brands fa-github fa-2xl"></i>
-                    <i class="fa-brands fa-bitbucket fa-2xl"></i>
+                <div class='skills-icon'>
+                    <i class='fa-brands fa-html5 fa-2xl'></i>
+                    <i class='fa-brands fa-css3-alt fa-2xl'></i>
+                    <i class='fa-brands fa-js fa-2xl'></i>
+                    <i class='fa-brands fa-react fa-2xl'></i>
+                    <i class='fa-brands fa-vuejs fa-2xl'></i>
+                    <i class='fa-brands fa-node-js fa-2xl'></i>
+                    <i class='fa-brands fa-bootstrap fa-2xl'></i>
+                    <i class='fa-brands fa-sass fa-2xl'></i>
+                    <i class='fa-brands fa-git fa-2xl'></i>
+                    <i class='fa-brands fa-github fa-2xl'></i>
+                    <i class='fa-brands fa-bitbucket fa-2xl'></i>
                 </div>
             </div>
         </article>
 
         <article id='portfolio'>
-            <div class="container">
-                <h2 class="heading-two">Portfolio</h2>
+            <div class='container'>
+                <h2 class='heading-two'>Portfolio</h2>
                 <p>Portfolio that has been built.</p>
-                <div class="portfolio-card">
-                    <div class="card">
+                <div class='portfolio-card'>
+                    <div class='card'>
                         <figure>
-                            <img src="assets/image/theater-24.jpg" alt="Theater 24" width="100%">
+                            <img src='assets/image/theater-24.jpg' alt='Theater 24' width='100%'>
                             <figcaption>
                                 This is a web about movies built on a technology stack using Vue, 3rd Party API (The
                                 Movie Database), PostgreSQL, Express.js, Node.js, Midtrans.
                             </figcaption>
                         </figure>
-                        <button type="button"><a href="https://theater24.web.app/">View more</a></button>
+                        <button type='button'><a href='https://theater24.web.app/'>View more</a></button>
                     </div>
-                    <div class="card">
+                    <div class='card'>
                         <figure>
-                            <img src="assets/image/customer-storepedia.jpg" alt="Customer Storepedia" width="100%">
+                            <img src='assets/image/customer-storepedia.jpg' alt='Customer Storepedia' width='100%'>
                             <figcaption>
                                 This is a web about customer e-commerce built on a technology stack using Vue,
                                 PostgreSQL, Express.js, Node.js.
                             </figcaption>
                         </figure>
-                        <button type="button"><a href="https://e-commerce-cms-858a6.web.app/">View more</a></button>
+                        <button type='button'><a href='https://e-commerce-cms-858a6.web.app/'>View more</a></button>
                     </div>
-                    <div class="card">
+                    <div class='card'>
                         <figure>
-                            <img src="assets/image/cms-storepedia.jpg" alt="CMS Storepedia" width="100%">
+                            <img src='assets/image/cms-storepedia.jpg' alt='CMS Storepedia' width='100%'>
                             <figcaption>
                                 This is a web about customer CMS built on a technology stack using Vue, PostgreSQL,
                                 Express.js, Node.js.
                             </figcaption>
                         </figure>
-                        <button type="button"><a href="https://fancy-e-commerce-customer.web.app/">View
+                        <button type='button'><a href='https://fancy-e-commerce-customer.web.app/'>View
                                 more</a></button>
                     </div>
                 </div>
@@ -118,21 +123,21 @@
         </article>
 
         <article id='contact'>
-            <div class="container">
-                <h2 class="heading-two">Contact</h2>
+            <div class='container'>
+                <h2 class='heading-two'>Contact</h2>
                 <p>If you have any questions about me. Please contact me.</p>
-                <form action="" method="post">
+                <form action='' method=''>
                     <fieldset>
-                        <input placeholder="Your name" type="text" required>
+                        <input placeholder='Your name' type='text' required>
                     </fieldset>
                     <fieldset>
-                        <input placeholder="Your Email Address" type="email" required>
+                        <input placeholder='Your email address' type='email' required>
                     </fieldset>
                     <fieldset>
-                        <textarea placeholder="Type your message here...." required></textarea>
+                        <textarea placeholder='Type your message here' required></textarea>
                     </fieldset>
                     <fieldset>
-                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                        <button name='submit' type='submit' id='contact-submit' data-submit='...Sending'>Submit</button>
                     </fieldset>
                 </form>
             </div>
@@ -140,8 +145,8 @@
     </main>
 
     <footer>
-        <section id="copyright">
-            <p id="years">Copyright ©
+        <section id='copyright'>
+            <p id='years'>Copyright ©
                 <script>
                     document
                         .getElementById('years')
@@ -151,17 +156,17 @@
             </p>
         </section>
 
-        <section id="social-media">
-            <div class="icon-social-media">
-                <a href="mailto: panjinmaulana@gmail.com"><i class="fa-solid fa-envelope fa-xl"></i></a>
-                <a href='https://linkedin.com/in/panji-maulana/'><i class="fa-brands fa-linkedin fa-xl"></i></a>
-                <a href='https://github.com/panjinmaulana'><i class="fa-brands fa-github fa-xl"></i></a>
+        <section id='social-media'>
+            <div class='icon-social-media'>
+                <a href='mailto: panjinmaulana@gmail.com'><i class='fa-solid fa-envelope fa-xl'></i></a>
+                <a href='https://linkedin.com/in/panji-maulana/'><i class='fa-brands fa-linkedin fa-xl'></i></a>
+                <a href='https://github.com/panjinmaulana'><i class='fa-brands fa-github fa-xl'></i></a>
             </div>
         </section>
     </footer>
 
-    <script src="index.js"></script>
-    <script src="https://kit.fontawesome.com/30586b5899.js" crossorigin="anonymous"></script>
+    <script src='index.js'></script>
+    <script src='https://kit.fontawesome.com/30586b5899.js' crossorigin='anonymous'></script>
 </body>
 
 </html>

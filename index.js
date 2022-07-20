@@ -8,15 +8,14 @@ const closeMenu = document.getElementById('close-menu');
 const slideClass = document.getElementsByClassName('slide');
 
 if (window.matchMedia("(min-width: 768px)").matches) {
-    logo.addEventListener('click', (event) => {
-        const navLinkActive = document.querySelector("nav ul li a.active");
+    const navLinkActive = document.querySelector("nav ul li a.active");
+
+    logo.addEventListener('click', () => {
         navLinkActive.classList.remove('active');
     });
 
     navMenu.addEventListener('click', (event) => {
         if (event.target.classList.contains('nav-link')) {
-            const navLinkActive = document.querySelector("nav ul li a.active");
-
             if (navLinkActive !== null && event.target.getAttribute('href') !== navLinkActive.getAttribute('href')) {
                 navLinkActive.classList.remove('active');
             };
@@ -65,7 +64,7 @@ if (window.matchMedia("(max-width: 640px)").matches) {
 };
 
 //Typewriter effect
-const line = document.getElementById("slogan");
+const line = document.getElementById("typewriter-name");
 const texts = ['Panji Maulana'];
 const speed = 50;
 

@@ -96,13 +96,16 @@ nav ul li a:visited {
     margin-left: 3px;
 }
 
-.jumbotron button:hover {
-    opacity: 0.9;
-    transition: all 0.3s ease-in-out;
+button.download-cv a,
+.card button a {
+    text-decoration: none;
+    color: white;
 }
 
-.jumbotron button:hover {
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+button.download-cv:hover,
+.card button:hover {
+    opacity: 0.85;
+    transition: all 0.3s ease-in-out;
 }
 
 #home {
@@ -139,6 +142,7 @@ nav ul li a:visited {
 
 .skills-icon i:hover {
     color: #00a2c6;
+    transition: all 0.3s ease-in-out;
 }
 
 #portfolio p {
@@ -173,10 +177,6 @@ nav ul li a:visited {
     margin: 0 auto 20px;
 }
 
-.card button a {
-    text-decoration: none;
-}
-
 .card button a:visited {
     color: white;
 }
@@ -184,10 +184,6 @@ nav ul li a:visited {
 .heading-two {
     color: #00a2c6;
     text-align: center;
-}
-
-h3 {
-    color: #00a2c6;
 }
 
 #contact {
@@ -236,7 +232,7 @@ fieldset {
 }
 
 #contact button[type='submit']:hover {
-    opacity: 0.9;
+    opacity: 0.85;
     transition: all 0.3s ease-in-out;
 }
 
@@ -252,12 +248,11 @@ footer span {
     font-family: 'Pacifico', cursive;
 }
 
-.fa-envelope,
-.fa-linkedin,
-.fa-github {
+#social-media .fa-envelope,
+#social-media .fa-linkedin,
+#social-media .fa-github {
     color: white;
     margin: 20px 10px 0 0;
-
 }
 
 /* Media Query */
@@ -320,7 +315,6 @@ footer span {
 
     #portfolio .portfolio-card .card {
         width: 100%;
-        /* margin-top: 30px; */
     }
 
     #portfolio .portfolio-card .card figcaption {
@@ -330,7 +324,6 @@ footer span {
 
 @media screen and (max-width: 640px) {
     body {
-        /* overflow-y: hidden; */
         font-size: 0.75rem;
     }
 
