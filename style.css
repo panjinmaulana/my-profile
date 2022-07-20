@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    overflow-x: hidden;
+}
+
+header .logo h3 a {
+    font-family: 'Pacifico', cursive;
+    color: #00a2c6;
+    text-decoration: none;
+}
+
+header .logo h3 a:visited {
+    color: #00a2c6;
+}
+
+.container {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 90px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #00a2c6;
+    border-radius: 5px;
+}
+
+nav ul li a:visited {
+    color: black;
+}
+
+#toogle-menu,
+#close-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.jumbotron {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.jumbotron button,
+.card button {
+    cursor: pointer;
+    display: block;
+    margin: 24px auto 0;
+    padding: 10px 20px;
+    background-color: #00a2c6;
+    border: 0;
+    border-radius: 0.25rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.fa-paper-plane {
+    margin-left: 3px;
+}
+
+button.download-cv a,
+.card button a {
+    text-decoration: none;
+    color: white;
+}
+
+button.download-cv:hover,
+.card button:hover {
+    opacity: 0.85;
+    transition: all 0.3s ease-in-out;
+}
+
+#home {
+    padding: 10rem 0 5rem;
+}
+
+#home .desc-bio {
+    min-width: 50%;
+}
+
+#about-me,
+#skills,
+#portfolio,
+#contact {
+    padding: 7rem 0 5rem;
+}
+
+#about-me .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#desc-about-me,
+#social-media {
+    width: 45%;
+}
+
+#social-media .fa-envelope,
+#social-media .fa-linkedin,
+#social-media .fa-github {
+    color: black;
+    margin: 20px 10px 0 0;
+}
+
+#social-media .fa-envelope:hover,
+#social-media .fa-linkedin:hover,
+#social-media .fa-github:hover,
+.skills-icon i:hover {
+    color: #00a2c6;
+    transition: all 0.3s ease-in-out;
+}
+
+#skills p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skills-icon {
+    padding: 24px 0;
+    text-align: center;
+}
+
+#portfolio p {
+    text-align: center;
+}
+
+.portfolio-card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.card {
+    border: 1px solid rgb(0 0 0 / 0.1);
+    padding: 5px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    transition: all 0.3s ease-in-out;
+    width: 30%;
+    min-height: 400px;
+    border-radius: 0.5rem;
+}
+
+.card:hover {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.card figcaption {
+    padding: 20px;
+}
+
+.card button {
+    margin: 0 auto 20px;
+}
+
+.card button a:visited {
+    color: white;
+}
+
+.heading-two {
+    color: #00a2c6;
+    text-align: center;
+}
+
+#contact {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact p {
+    text-align: center;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 10px 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type='text'],
+#contact input[type='email'],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact button[type='submit'] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #00a2c6;
+    color: #FFF;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+#contact button[type='submit']:hover {
+    opacity: 0.85;
+    transition: all 0.3s ease-in-out;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer span {
+    font-family: 'Pacifico', cursive;
+}
+
+/* Media Query */
+@media screen and (max-width: 1280px) {
+    nav ul {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        padding: 20px 50px;
+    }
+
+    nav ul {
+        width: 55%;
+    }
+
+    #home .desc-bio {
+        min-width: 70%;
+    }
+
+    #home .jumbotron .img-bio img,
+    #about-me,
+    #skills,
+    #contact {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 20px 40px;
+    }
+
+    nav ul {
+        width: 65%;
+    }
+
+    #portfolio .portfolio-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 1300px;
+    }
+
+    #portfolio .portfolio-card .card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        font-size: 0.75rem;
+    }
+
+    nav {
+        padding: 20px 20px;
+    }
+
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #00a2c6;
+        z-index: 9999;
+        transform: translateX(100%);
+    }
+
+    nav ul.slide {
+        transform: translateX(0);
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    #toogle-menu {
+        display: block;
+    }
+
+    #home,
+    #about-me,
+    #skills,
+    #portfolio,
+    #contact {
+        padding: 5rem 0 1rem;
+    }
+
+    #home .jumbotron {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #home .jumbotron .desc-bio {
+        margin-top: 20px;
+        order: 2;
+        text-align: center;
+    }
+
+    #home .jumbotron .img-bio {
+        order: 1;
+    }
+
+    #home .jumbotron .img-bio img {
+        width: 40%;
+    }
+
+    #about-me .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #desc-about-me,
+    #social-media {
+        width: 100%;
+    }
+
+    #social-media {
+        margin-top: 20px;
+    }
+
+    #social-media .icon-social-media {
+        text-align: center;
+    }
+}
